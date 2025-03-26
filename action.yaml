@@ -19,7 +19,7 @@ runs:
     - name: Bump version and push tag
       if: ${{ steps.tag.outputs.tag == '' }}
       id: tag_version
-      uses: anothrNick/github-tag-action@1.36.0
+      uses: anothrNick/github-tag-action@1.71.0
       env:
         GITHUB_TOKEN: ${{ inputs.github-token }}
         WITH_V: false
